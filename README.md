@@ -1,6 +1,6 @@
 # YouTubeControl
 Small python3 flask app to control youtube page from phone.
-It uses flask for server and keyboard.py for control 
+It uses flask and keyboard.py
 
 ### Install requirements
 ```
