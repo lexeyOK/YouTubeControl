@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		section{
+			display: flex;
+			justify-content: center;
+		}
+
+		button {
+		  font-size: 2rem ;
+		  width: 125px;
+		  padding: 1.5rem;
+		  background-color: #999;
+		  text-align: center;
+		  box-sizing: border-box;
+		  margin:0.25rem;
+		  border: 0;
+		  border-radius: 0.5rem;
+		}
+	</style>
+	<title>YouTube Control</title>
+</head>
+<body>
+	<section>
+  		<button class="control" id="j">j</button>
+  		<button class="control" id="k">k</button>
+  		<button class="control" id="l">l</button>
+ 	</section>
+	<section>  
+  		<button class="control" id="m">m</button>
+  		<button class="control" id="f">f</button>
+ 	</section>
+ 	<script type="text/javascript">	
+		for(let button of document.querySelectorAll('.control')) {
+  			button.onclick = function() {
+ 				let promise = fetch('/' + button.id);
+				return false;
+			}
+		}
+	</script>
+</body>
