@@ -13,4 +13,4 @@ keyboard.py needs sudo to work
 sudo python3 YouTubeControl.py
 ```
 open [`http://0.0.0.0:8080/`](http://0.0.0.0:8080/) on your device  
-or `http://your_hosts_local_name:8080`
+or `http://your_host_local_name:8080`
